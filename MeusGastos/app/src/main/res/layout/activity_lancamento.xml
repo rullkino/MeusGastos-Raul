@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LancamentoActivity">
+
+
+
+    <RadioGroup
+        android:id="@+id/rgTipoTransacao"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingRight="20dp"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/rbReceita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receita"/>
+        <RadioButton android:id="@+id/rbDispesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Despesa"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtData"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data"
+        android:inputType="date"/>
+    <EditText
+        android:layout_margin="20dp"
+        android:id="@+id/edtDescricao"
+        android:hint="Descrição"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edtValor"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Valor da transação"/>
+
+</LinearLayout>
